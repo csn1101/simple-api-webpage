@@ -15,3 +15,5 @@ mkdir -p dist
 cp index.html script.js style.css dist/
 
 echo "Build complete. Files copied to ./dist"
+cd dist
+python3 -m http.server 8080
